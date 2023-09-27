@@ -1,2 +1,4 @@
-package com.example.swiggato.transformer;public class FoodItemTransformer {
+package com.example.swiggato.transformer;
+
+public class FoodItemTransformer {
 }

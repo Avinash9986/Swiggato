@@ -1,5 +1,8 @@
 package com.example.swiggato.exception;
 
-public class CustomerNotFound extends RuntimeException{
-    CustomerNotFound()
+public class CustomerNotFoundException extends RuntimeException{
+
+    public CustomerNotFoundException(String message) {
+        super(message);
+    }
 }
