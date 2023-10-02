@@ -1,6 +1,7 @@
 package com.example.swiggato.dto.request;
 
-import com.example.swiggato.Enum.FoodCategory;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -11,15 +12,11 @@ import lombok.experimental.FieldDefaults;
 @Builder
 public class FoodRequest {
 
-    int resturantId ;
+    int requiredQuantity ;
 
-    String dishName ;
+    String customerMobile ;
 
-    double price ;
+    int menuItemId ;
 
-    FoodCategory foodCategory ;
 
-    boolean veg ;
-
-    boolean available ;
 }

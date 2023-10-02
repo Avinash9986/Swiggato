@@ -26,6 +26,7 @@ public class Restraunt {
 
     String location ;
 
+    @Enumerated(EnumType.STRING)
     RestarauntCategory restarauntCategory ;
 
     @Size(min = 10,max = 10)
@@ -35,7 +36,7 @@ public class Restraunt {
 
 
     @OneToMany(mappedBy = "restraunt",cascade = CascadeType.ALL)
-    List<FoodItem> availableItems = new ArrayList<>() ;
+    List<MenuItem> availableItems = new ArrayList<>() ;
 
     @OneToMany(mappedBy = "restraunt",cascade = CascadeType.ALL)
     List<OrderEntity> orders = new ArrayList<>() ;

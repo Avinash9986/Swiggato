@@ -7,19 +7,22 @@ import java.util.List;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RestarauntResponse {
+@Builder
+public class CartStatusResponse {
 
-    String name ;
+    String cutomerName ;
 
-    String location ;
+    String customeraddress ;
 
-    String contactNumber ;
+    String customerMobile ;
 
-    boolean opened ;
+    double cartTotal ;
 
-    List<MenuResponse> menu ;
+    List<FoodResponse> foodList ;
+
+    String restarauntName ;
+
 
 }

@@ -1,25 +1,20 @@
 package com.example.swiggato.dto.response;
 
+import com.example.swiggato.Enum.FoodCategory;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import java.util.List;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RestarauntResponse {
+public class MenuResponse {
+    String dishName ;
 
-    String name ;
+    double price ;
 
-    String location ;
+    FoodCategory category ;
 
-    String contactNumber ;
-
-    boolean opened ;
-
-    List<MenuResponse> menu ;
-
+    boolean veg ;
 }

@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class CartResponse {
 
-    int cartTotal ;
+    double cartTotal ;
 
-    List<FoodResponse> foodItems ;
+    List<MenuResponse> foodItems ;
 }
